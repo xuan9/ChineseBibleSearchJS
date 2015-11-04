@@ -1,0 +1,16 @@
+{
+  "name": "chinese-bible-search",
+  "version": "0.0.1",
+  "description": "Chinese Bible text, indexes, and search APIs. 聖經和合本文本，索引和搜索。",
+  "author": "(https://github.com/xuan9/ChineseBibleSearchJS)",
+  "main": "bibleSearch.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xuan9/ChineseBibleSearchJS.git"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/xuan9/ChineseBibleSearchJS",
+  "devDependencies": {
+    "chinese-converter": "0.0.3"
+  }
+}
