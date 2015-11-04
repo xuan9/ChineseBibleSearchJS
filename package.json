@@ -1,6 +1,6 @@
 {
   "name": "chinese-bible-search",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Chinese Bible text, indexes, and search APIs. 聖經和合本中文正體字文本，索引和搜索。",
   "author": "(https://github.com/xuan9/ChineseBibleSearchJS)",
   "main": "bibleSearch.js",
