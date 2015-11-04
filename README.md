@@ -6,7 +6,8 @@ Chinese Bible text, indexes, and search APIs.
 - setOptions
 - indexSearch
 
-### Examples
+### Example
+```javascript
 var bibleSearch = require('chinese-bible-search');
 
 bibleSearch.setOptions({
@@ -21,4 +22,5 @@ bibleSearch.setOptions({
   }
 });
 
-console.log(bibleSearch.indexSearch('太 1：1，太7:1－3 马太福音5，6，7'));
+console.log(bibleSearch.indexSearch('创 1：1，太5:3－9 马太福音5，6，7'));
+```
