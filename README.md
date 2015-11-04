@@ -1,6 +1,9 @@
 # ChineseBibleSearchJS
 Chinese Bible text, indexes, and search APIs.
-聖經和合本文本，索引和搜索。
+
+聖經和合本正体字文本，索引和搜索。
+
+＊可以用[ChineseConverterJS](https://github.com/xuan9/ChineseConverterJS)轉換成簡體字。
 
 ### APIs
 - setOptions
@@ -22,5 +25,5 @@ bibleSearch.setOptions({
   }
 });
 
-bibleSearch.indexSearch('创 1：1，太5:3－9 马太福音5，6，7');
+bibleSearch.indexSearch('創 1：1，太5:3－9 馬太福音5，6，7');
 ```

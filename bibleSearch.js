@@ -1,12 +1,12 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define(['bibleText', 'bibleIndexes', 'ChineseConverter'], factory);
+    define(['bibleText', 'bibleIndexes'], factory);
   } else if (typeof exports === 'object') {
     module.exports = factory(require('./bibleText'), require('./bibleIndexes'), require('chinese-converter'));
   } else {
-    root.bibleSearch = factory(root.bibleText, root.bibleIndexes, root.ChineseConverter);
+    root.bibleSearch = factory(root.bibleText, root.bibleIndexes);
   }
-}(this, function(bibleText, bibleIndexes, ChineseConverter) {
+}(this, function(bibleText, bibleIndexes) {
   var Searcher = {
     onError: function(err, source) {
       console.error(source ? err + ": " + source : err);
@@ -47,8 +47,8 @@
     }
   };
 
-  var find = function(bookName, iChapterIndex1, iLine1, iChapterIndex2, iLine2) {
-    bookName = ChineseConverter.toTraditionalChinese(bookName);
+  // requires bookName to be traditional chinese
+var find = function(bookName, iChapterIndex1, iLine1, iChapterIndex2, iLine2) {
     // console.log('search ' + bookName + " " + iChapterIndex1 + ":" + iLine1 + " -- " + iChapterIndex2 + ":" + iLine2);
     var bookIndex = bibleIndexes.getBookIndex(bookName);
     var chapterIndex1, line1, chapterIndex2, line2;
