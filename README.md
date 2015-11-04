@@ -7,7 +7,7 @@ Chinese Bible text, indexes, and search APIs.
 - indexSearch
 
 ### Examples
-var bibleSearch = require('./bibleSearch');
+var bibleSearch = require('chinese-bible-search');
 
 bibleSearch.setOptions({
   onError: function(err, source) {
