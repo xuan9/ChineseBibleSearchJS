@@ -22,5 +22,5 @@ bibleSearch.setOptions({
   }
 });
 
-console.log(bibleSearch.indexSearch('创 1：1，太5:3－9 马太福音5，6，7'));
+bibleSearch.indexSearch('创 1：1，太5:3－9 马太福音5，6，7');
 ```
