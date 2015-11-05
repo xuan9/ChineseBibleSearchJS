@@ -2,7 +2,7 @@
   if (typeof define === 'function' && define.amd) {
     define(['./bibleText', './bibleIndexes'], factory);
   } else if (typeof exports === 'object') {
-    module.exports = factory(require('./bibleText'), require('./bibleIndexes');
+    module.exports = factory(require('./bibleText'), require('./bibleIndexes'));
   } else {
     root.bibleSearch = factory(root.bibleText, root.bibleIndexes);
   }
