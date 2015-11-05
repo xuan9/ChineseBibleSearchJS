@@ -1,6 +1,6 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define(['bibleText', 'bibleIndexes'], factory);
+    define(['./bibleText', './bibleIndexes'], factory);
   } else if (typeof exports === 'object') {
     module.exports = factory(require('./bibleText'), require('./bibleIndexes');
   } else {
