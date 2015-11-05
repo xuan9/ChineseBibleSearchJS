@@ -9,5 +9,11 @@
     "url": "https://github.com/xuan9/ChineseBibleSearchJS.git"
   },
   "license": "MIT",
-  "homepage": "https://github.com/xuan9/ChineseBibleSearchJS"
+  "homepage": "https://github.com/xuan9/ChineseBibleSearchJS",
+  "devDependencies": {
+    "mocha": "^2.3.3"
+  },
+  "scripts": {
+   "test": "node_modules/.bin/mocha"
+  }
 }
